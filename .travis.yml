@@ -15,7 +15,7 @@ after_success:
  - docker build -t kunalchoudhary2/multi-server ./server
  - docker build -t kunalchoudhary2/multi-worker ./worker
 
-#log in to the docker cli
+#log in to the docker cli. Updated credentials in travis
  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # take these images and push them to docker hub
  - docker push kunalchoudhary2/multi-client
